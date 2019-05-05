@@ -30,7 +30,7 @@ bundle install --path original
 
 練習として簡易版の Faker を自作してみる。
 
-MyFaker (my_faker.rb)
+[MyFaker](my_faker.rb)
 
 
 ### Usage
