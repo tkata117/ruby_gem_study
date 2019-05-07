@@ -1,6 +1,6 @@
 # Faker
 
-Faker(https://raw.githubusercontent.com/stympy/faker) のコード・リーディング
+[Faker](https://github.com/stympy/faker) のコード・リーディング
 
 ## コード・リーディング
 
@@ -24,6 +24,9 @@ bundle install --path original
 ### リーディング
 
 コード中の気になる箇所に binding.pry を記載しながら動作を見てみる。
+
+リーディングメモ:
+* [Ruby gem コードリーディング 01 : Faker (1)](https://tkata117.hatenablog.com/entry/2019/05/06/132039)
 
 
 ## 簡易版 自作Faker
