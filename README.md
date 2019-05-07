@@ -4,5 +4,5 @@ Ruby gem コード・リーディングのメモ用リポジトリ。
 各gemの簡易版のコードを自分で書いてみる予定(ものによっては写経)。
 
 ## 対象gem
-  - [Faker](https://raw.githubusercontent.com/stympy/faker)
+  - [Faker](https://github.com/stympy/faker)
   
