@@ -31,9 +31,7 @@ bundle install --path original
 
 ## 簡易版 自作Faker
 
-練習として簡易版の Faker を自作してみる。
-
-[MyFaker](my_faker.rb)
+練習として簡易版の Faker を自作してみた → [MyFaker](lib)
 
 
 ### Usage
