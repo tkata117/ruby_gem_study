@@ -28,4 +28,8 @@ class TestEnFakerName < Test::Unit::TestCase
   def test_prefix
     assert @tester.prefix.match(/\w+\.?/)
   end
+
+  def test_girls_name
+    assert @tester.girls_name.match(/\w+/)
+  end
 end

@@ -8,6 +8,7 @@ en:
       female_first_name: ["Genevie", "Cassi", "Delfina", "Mollie", "Tobie", "Claris", "Britta", "Shenika", "Tammie", "Paulina", "Mai", "Tonda", "Reita", "Olimpia", "Lyndsay", "Daphne", "Luanna", "Kendra", "Rossie", "Maragret"]
       last_name: ["Abshire", "Renner", "Mayert", "Mosciski", "Cormier", "Williamson", "Cronin", "Swift", "Miller", "Shanahan", "Jerde", "Zboncak", "Hammes", "Bergnaum", "Hammes", "West", "Olson", "Kiehn", "Weber", "Ernser"]
       prefix: [Mr., Mrs., Ms., Miss, Dr.]
+      girls_name: ["Alice", "Cheryl", "Tatiana"]
       name:
         - "#{prefix} #{first_name} #{last_name}"
         - "#{first_name} #{last_name}"

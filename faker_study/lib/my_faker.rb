@@ -25,7 +25,6 @@ module MyFaker
           text = if respond_to?(meth)
                    send(meth)
                  else
-                   key_path = to_s.split('::').last.downcase
                    parse("#{key_path}.#{meth}")
                  end
           text + etc.to_s
@@ -41,7 +40,16 @@ module MyFaker
 
       def sample(list)
         list.respond_to?(:sample) ? list.sample : list
-      end      
+      end
+
+      def method_missing(meth, *args, &block)
+        fetch("#{key_path}.#{meth}")
+      end
+
+      private
+        def key_path
+          to_s.split('::').last.downcase
+        end
     end
 
   end
