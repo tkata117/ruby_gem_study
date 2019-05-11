@@ -6,6 +6,8 @@ I18n.reload! if I18n.backend.initialized?
 module MyFaker
 
   class Config
+    @locale = nil
+
     class << self
       attr_writer :locale
       
