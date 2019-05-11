@@ -6,3 +6,5 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :tag => 'v1.9.3'
 gem 'byebug'
+gem 'rake'
+gem 'test-unit'
