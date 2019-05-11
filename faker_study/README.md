@@ -8,25 +8,20 @@ v1.9.3 tag を読む。
 
 ### 準備
 
-Gemfile に下記の gem を記載
-
-```ruby
-gem 'faker', :git => 'https://github.com/stympy/faker.git', :tag => 'v1.9.3'
-gem 'byebug'
-```
+[Gemfile](Gemfile) を用意
 
 bundler でローカルにインストール
 
 ```bash
-bundle install --path original
+bundle install --path vendor/bundle
 ```
 
 ### リーディング
 
 コード中の気になる箇所に binding.pry を記載しながら動作を見てみる。
 
-リーディングメモ:
-* [Ruby gem コードリーディング 01 : Faker (1)](https://tkata117.hatenablog.com/entry/2019/05/06/132039)
+* リーディングメモ:
+  * [Ruby gem コードリーディング 01 : Faker (1)](https://tkata117.hatenablog.com/entry/2019/05/06/132039)
 
 
 ## 簡易版 自作Faker
@@ -36,11 +31,17 @@ bundle install --path original
 
 ### Usage
 
+実行例
 ```ruby
-require './my_faker' # my_faker.rb が置かれているディレクトリで実行する例
+require './lib/my_faker'
 
 MyFaker::Name.name #=> :en locale の名前をRandomに返す
 
 MyFaker::Config.locale = :ja
 MyFaker::Name.name #=> :ja locale の名前をRandomに返す
+```
+
+Test
+```bash
+bundle exec rake test
 ```
