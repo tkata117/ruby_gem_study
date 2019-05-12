@@ -18,7 +18,7 @@ bundle install --path vendor/bundle
 
 ### リーディング
 
-コード中の気になる箇所に binding.pry を記載しながら動作を見てみる。
+コード中の気になる箇所に `byebug` を追加しながら動作を見てみる。
 
 * リーディングメモ:
   * [TBD](TBD)
