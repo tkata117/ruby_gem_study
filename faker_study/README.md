@@ -18,7 +18,7 @@ bundle install --path vendor/bundle
 
 ### リーディング
 
-コード中の気になる箇所に binding.pry を記載しながら動作を見てみる。
+コード中の気になる箇所に `byebug` を追加しながら動作を見てみる。
 
 * リーディングメモ:
   * [Ruby gem コードリーディング 01 : Faker (1)](https://tkata117.hatenablog.com/entry/2019/05/06/132039)
