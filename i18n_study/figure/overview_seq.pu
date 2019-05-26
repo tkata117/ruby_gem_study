@@ -1,0 +1,38 @@
+@startuml
+autonumber
+
+
+/' load_path
+-> I18n : I18n.load_path << path
+I18n -> Config : load_path()
+Config -> Backend : reload!()
+'/
+
+-> I18n : I18n.translate(:test)
+activate I18n
+I18n -> Config : available_locales_set()
+activate Config
+Config -> Backend : available_locales()
+activate Backend
+Backend -> Backend : init_translation()
+Backend -> Backend : load_translations()
+group loop
+  Backend -> Backend : load_file()
+  group loop
+    Backend -> Backend : store_translations()
+  end
+end
+Backend --> Config
+deactivate Backend
+Config --> I18n
+deactivate Config
+
+I18n -> Backend : translate()
+activate Backend
+Backend -> Backend : lookup()
+Backend -> Backend : resolve()
+Backend --> I18n
+deactivate Backend
+deactivate I18n
+
+@enduml
